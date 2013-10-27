@@ -1,11 +1,3 @@
-/*
-Theme Name: ParkerRogersInteriors
-Author: Tyler Bisset
-Author URI: tylerbisset.com
-Description: Website showcasing the works of Parker and Company Interior Design.
-Version: 1.0
-*/
-
 /* **************CUSTOM FONTS************** */
 @import url(http://fonts.googleapis.com/css?family=Raleway:300,200);
 
@@ -106,6 +98,11 @@ header img{
 .main-nav ul li {
 	position: relative;
 	float: left;
+	padding: 0 20px 0 20px;
+	text-decoration: none;
+	line-height: 50px;
+	display: block;
+	color: #fff;
 }
 
 .main-nav ul ul {

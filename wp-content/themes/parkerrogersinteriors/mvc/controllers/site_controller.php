@@ -2,6 +2,7 @@
 
 class SiteController extends ChesterBaseController {
 	
+	//test function
 	public function showPostPreviews() {
 
 	  $posts = ChesterWPCoreDataHelpers::getWordpressPostsFromLoop();
@@ -17,6 +18,17 @@ class SiteController extends ChesterBaseController {
 	public function showHome() {
 		echo $this->renderPage('home');
 	}
+	
+	public function showProjects(){}
+	
+	public function showPress(){}
+	
+	public function showAbout(){}
+	
+	public function showContact(){}
+	
+	
+	
 
 }
 
