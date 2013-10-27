@@ -1,9 +1,11 @@
-<?php get_header();?>
+<?php
+//require the site controller
+require_once(dirname(__FILE__).'/mvc/controllers/site_controller.php');
 
-	<div class="homebox container offset-by-five">
-	<h2>Parker and Company<br/>Interior Design</h2>
-	</div>
+//init the site controller
+$siteController = new SiteController();
 
-<?php get_sidebar();?>
+//call the showHome function
+$siteController->showHome();
 
-<?php get_footer();?>
+?>
