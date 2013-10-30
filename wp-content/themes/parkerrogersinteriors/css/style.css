@@ -120,6 +120,19 @@ header img{
 	opacity: 1;
 }
 
+h1 {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 2em;
+	margin-bottom: 20px;
+	padding: 10px;
+	/* Fallback for web browsers that don't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+}
+
 h2 {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -131,6 +144,43 @@ h2 {
     background: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity */
     background: rgba(0, 0, 0, 0.6);
+}
+
+h3 {
+	float: left;
+	font-size: 1.7em;
+}
+
+form input[type=text]{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: #fff;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #666;
+	padding: 3px;
+}
+
+.content {
+	/* Fallback for web browsers that don't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+	width: 75%;
+	padding: 20px;
+	
+}
+
+.content img {
+	float: left;
+	clear: both;
+	height: 200px;
+	width: 200px;
+}
+
+.content p {
+	display: block;
 }
 
 footer {
