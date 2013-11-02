@@ -169,11 +169,21 @@ h2 {
 	width: 640px;
 	height: 640px;
 	margin: 0 auto;
+	overflow: scroll;
+}
+
+#gallery img {
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+#gallery p {
+	display: inline;
 }
 
 #gallery div {
 	float: left;
-	padding: 5px;
+	padding: 0 10px 10px 0;
 }
 
 /* About Page CSS */

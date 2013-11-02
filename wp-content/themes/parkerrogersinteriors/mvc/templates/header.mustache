@@ -19,5 +19,36 @@
     <link rel="apple-touch-icon-precomposed" href="{{template_directory}}/apple-touch-icon-precomposed.png">
 	
 	<link rel="stylesheet" href="{{template_directory}}/css/skeleton.css">
+	<link rel="stylesheet" href="{{template_directory}}/css/supersized.css">
 	<link rel="stylesheet" href="{{template_directory}}/css/style.css">
+	<link rel="stylesheet" href="{{template_directory}}/theme/supersized.shutter.css">
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="{{template_directory}}/js/jquery.easing.min.js"></script>
+		
+	<script type="text/javascript" src="{{template_directory}}/js/supersized.3.2.7.min.js"></script>
+	<script type="text/javascript" src="{{template_directory}}/theme/supersized.shutter.min.js"></script>
+	
+	<script type="text/javascript">			
+			jQuery(function($){				
+				$.supersized({
+				
+					// Functionality
+					
+					slide_interval      :   100000,		// Length between transitions
+					transition          :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed	:	700,		// Speed of transition
+															   
+					// Components							
+					slide_links			:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 				:  	[			// Slideshow Images
+												{image : '{{template_directory}}/images/bg_1.jpg'},
+												{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-1.jpg'},
+												{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-2.jpg'},  
+												{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-3.jpg'},
+											]					
+				}); //supersized
+		    });	//jQuery	    
+	</script>
+	
 	
