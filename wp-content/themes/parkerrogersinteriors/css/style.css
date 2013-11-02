@@ -146,9 +146,120 @@ h2 {
     background: rgba(0, 0, 0, 0.6);
 }
 
+.content {
+	/* Fallback for web browsers that don't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+	width: 75%;
+	padding: 20px;	
+}
+
+.content p {
+	display: block;
+}
+
+/* Projects Page CSS */
+#projects {
+	width: 140px;
+	margin: 20px auto;
+}
+
+#gallery {
+	width: 640px;
+	height: 640px;
+	margin: 0 auto;
+}
+
+#gallery div {
+	float: left;
+	padding: 5px;
+}
+
+/* About Page CSS */
+#about {
+	width: 144px;
+	margin: 20px auto;
+}
+
+#foursquare {
+    width: 640px;
+    height: 640px;
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+}
+
+#foursquare img {
+	height: 300px;
+	width: 300px;
+}
+
+#topleft {
+	width: 300px;
+	height: 300px;
+    margin: 10px;
+    display: block;
+    float: left;
+}
+
+#topright {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: block;
+    float: left;
+}
+
+#bottomleft {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: block;
+    float: left;
+    clear: left;
+}
+
+#bottomright {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    display: block;
+    float: left;   
+}
+
+/* Contact Page CSS */
+#contact {
+	width: 170px;
+	margin: 20px auto;
+}
+
+#contactleft {
+	width: 400px;
+	height: 400px;
+    margin: 10px;
+    display: block;
+    float: left;
+}
+
+#contactright {
+	width: 200px;
+    height: 300px;
+    margin: 10px;
+    display: block;
+    float: left;
+	line-height: 20px;
+}
+
 h3 {
 	float: left;
 	font-size: 1.7em;
+	margin-bottom: 40px;
+}
+
+input{
+	display: block;
+	margin-bottom: 40px;
 }
 
 form input[type=text]{
@@ -160,29 +271,33 @@ form input[type=text]{
 	border: none;
 	border-bottom: 1px solid #666;
 	padding: 3px;
+	width: 300px;	
 }
 
-.content {
-	/* Fallback for web browsers that don't support RGBa */
-    background: rgb(0, 0, 0);
-    /* RGBa with 0.6 opacity */
-    background: rgba(0, 0, 0, 0.6);
-	width: 75%;
-	padding: 20px;
-	
+form textarea {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: #fff;
+	background: none;
+	border: none;
+	border: 1px solid #666;
+	padding: 3px;
+	width: 610px;
+	height: 300px;
 }
 
-.content img {
-	float: left;
-	clear: both;
-	height: 200px;
-	width: 200px;
+form input[type=button]{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	color: #fff;
+	background: #4CBB17;
+	border: none;
+	padding: 5px 10px;
 }
 
-.content p {
-	display: block;
-}
-
+/* Footer */
 footer {
 	text-align: center;
 	padding: 20px 0;
