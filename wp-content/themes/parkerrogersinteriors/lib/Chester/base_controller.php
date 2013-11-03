@@ -36,6 +36,7 @@ class ChesterBaseController {
     echo $this->render('header_close', ChesterWPCoreDataHelpers::getBlogInfoData(),array(
       'siteTitleHTML' => self::renderSiteTitle()
     ));
+	wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
     echo $this->render($templateName, $templateVars);
     wp_footer();
     echo $this->render('footer');

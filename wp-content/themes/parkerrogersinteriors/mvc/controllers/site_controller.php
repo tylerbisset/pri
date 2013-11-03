@@ -1,16 +1,15 @@
 <?php
 
 class SiteController extends ChesterBaseController {
-	
-	
+		
 	/* IMPORTANT 
-		renderPage function loads header, footer, and site title files with page
+		renderPage function loads header, wp-nav-menu, footer, and site title files with page
 		render function loads just the page
+		Refer to Chester/base_controller.php
 	*/
 	
 	//renders home.mustache
 	public function showHome() {
-		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
 		echo $this->renderPage('home');
 	}
 	
@@ -18,36 +17,27 @@ class SiteController extends ChesterBaseController {
 	public function showProjects(){
 		//framework helper to get data from wp loop
 		$posts = ChesterWPCoreDataHelpers::getWordpressPostsFromLoop();
-		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
-		echo $this->renderPage('projects', array(
-			
-			'posts' => $posts,
-			'next_posts_link' => get_next_posts_link(),
-			'previous_posts_link' => get_previous_posts_link()
-		));
+		echo $this->renderPage('projects', array(			
+			'posts' => $posts	
+		));		
 	}
 	
 	//renders press.mustache with posts
 	public function showPress(){
 		//framework helper to get data from wp loop
 		$posts = ChesterWPCoreDataHelpers::getWordpressPostsFromLoop();
-		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
 		echo $this->renderPage('press', array(
-			'posts' => $posts,
-			'next_posts_link' => get_next_posts_link(),
-			'previous_posts_link' => get_previous_posts_link()
+			'posts' => $posts
 		));
 	}
 	
 	//renders about.mustache
-	public function showAbout(){
-		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
+	public function showAbout(){		
 		echo $this->renderPage('about');
 	}
 	
 	//renders contact.mustache
-	public function showContact(){
-		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
+	public function showContact(){		
 		echo $this->renderPage('contact');
 	}
 	
