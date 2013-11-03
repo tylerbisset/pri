@@ -2,13 +2,10 @@
 <div class="content" id="foursquare">
 	<section id="contactleft">
 		<h3>Send us an email</h3>
-		<form>
-			<input type="text" name="name" placeholder="Name">
-			<input type="text" name="email" placeholder="Email Address">
-			<textarea name="message" placeholder="Message"></textarea>
-			<input type="button" value="Submit" />
-		</form>
-	</section>
+		{{#posts}}
+			{{{content}}}
+		{{/posts}}
+	<section>
 	<section id="contactright">
 		<p>Parker &amp; Company<br />
 		99 Mill Hill Road<br />
@@ -16,5 +13,5 @@
 		p. 203.256.2742<br />
 		f. 203.256.2748<br />
 		</p>
-	<section>
+    <section>
 </div>

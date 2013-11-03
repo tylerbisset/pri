@@ -37,8 +37,11 @@ class SiteController extends ChesterBaseController {
 	}
 	
 	//renders contact.mustache
-	public function showContact(){		
-		echo $this->renderPage('contact');
+	public function showContact(){	
+		$posts = ChesterWPCoreDataHelpers::getWordpressPostsFromLoop();
+		echo $this->renderPage('contact', array(
+			'posts' => $posts
+		));
 	}
 	
 } //SiteController
