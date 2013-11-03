@@ -2,6 +2,7 @@
 
 class SiteController extends ChesterBaseController {
 	
+	
 	/* IMPORTANT 
 		renderPage function loads header, footer, and site title files with page
 		render function loads just the page
@@ -9,6 +10,7 @@ class SiteController extends ChesterBaseController {
 	
 	//renders home.mustache
 	public function showHome() {
+		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
 		echo $this->renderPage('home');
 	}
 	
@@ -16,8 +18,9 @@ class SiteController extends ChesterBaseController {
 	public function showProjects(){
 		//framework helper to get data from wp loop
 		$posts = ChesterWPCoreDataHelpers::getWordpressPostsFromLoop();
-		
+		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
 		echo $this->renderPage('projects', array(
+			
 			'posts' => $posts,
 			'next_posts_link' => get_next_posts_link(),
 			'previous_posts_link' => get_previous_posts_link()
@@ -28,7 +31,7 @@ class SiteController extends ChesterBaseController {
 	public function showPress(){
 		//framework helper to get data from wp loop
 		$posts = ChesterWPCoreDataHelpers::getWordpressPostsFromLoop();
-		
+		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
 		echo $this->renderPage('press', array(
 			'posts' => $posts,
 			'next_posts_link' => get_next_posts_link(),
@@ -38,11 +41,13 @@ class SiteController extends ChesterBaseController {
 	
 	//renders about.mustache
 	public function showAbout(){
+		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
 		echo $this->renderPage('about');
 	}
 	
 	//renders contact.mustache
 	public function showContact(){
+		wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
 		echo $this->renderPage('contact');
 	}
 	

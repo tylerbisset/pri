@@ -33,7 +33,7 @@ class ChesterBaseController {
   public function renderPage($templateName, $templateVars = false) {
     echo $this->render('header', ChesterWPCoreDataHelpers::getBlogInfoData());
     wp_head();
-    echo $this->render('header_close', array(
+    echo $this->render('header_close', ChesterWPCoreDataHelpers::getBlogInfoData(),array(
       'siteTitleHTML' => self::renderSiteTitle()
     ));
     echo $this->render($templateName, $templateVars);
