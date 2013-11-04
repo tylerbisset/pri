@@ -87,8 +87,9 @@ h1 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 200;
 	font-size: 2em;
-	margin-bottom: 20px;
+	margin: 0 auto 20px auto;
 	padding: 10px;
+	max-width: 180px;	
 	/* Fallback for web browsers that don't support RGBa */
     background: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity */
@@ -108,19 +109,6 @@ h2 {
     background: rgba(0, 0, 0, 0.6);
 }
 
-.content {
-	/* Fallback for web browsers that don't support RGBa */
-    background: rgb(0, 0, 0);
-    /* RGBa with 0.6 opacity */
-    background: rgba(0, 0, 0, 0.6);
-	width: 75%;
-	padding: 20px;	
-}
-
-.content p {
-	display: block;
-}
-
 /* Home Page CSS */
 #homebox {
 	width: 480px;
@@ -128,27 +116,21 @@ h2 {
 }
 
 /* Projects/Press Page CSS */
-#projects {
-	width: 140px;
-	margin: 20px auto;
-}
-
-#press {
-	width: 100px;
-	margin: 20px auto;
-}
-
 #gallery {
 	width: 640px;
 	height: 640px;
 	margin: 0 auto;
 	overflow: scroll;
 	overflow-x: hidden;
+	padding: 10px;
+	/* Fallback for web browsers that don't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
 }
 
 #gallery img {
-	padding-right: 4px;
-	padding-bottom: 5px;
+	padding: 10px;
 	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
@@ -175,13 +157,17 @@ h2 {
 	width: 144px;
 	margin: 20px auto;
 }
-
+ /*for about and contact pages */
 #foursquare {
     width: 640px;
-    height: 640px;
+    min-height: 640px;
     margin: 0 auto;
-    padding: 10px;
     display: block;
+	padding: 10px;
+	/* Fallback for web browsers that don't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
 }
 
 #topleft {
