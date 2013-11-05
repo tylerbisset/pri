@@ -54,11 +54,11 @@ table {
 body {
 	color: #fff;
 	font-family: 'Raleway', sans-serif;
-	font-weight: 300;
-	background: #efe6ab;
+	font-weight: 300;	
 	background-image: url('../images/bg_1.jpg');
+	background: #000;
 	background-size: 100%;
-	background-repeat: repeat-y;
+	background-repeat: none;
 	margin: 0 auto;
 }
 .homebutton {
@@ -80,6 +80,11 @@ body {
 .menu a:hover {
 	background: #fff;
 	color: #000;
+}
+
+.menu a:active {
+	background: #000;
+	color: #fff;
 }
 
 h1 {
@@ -141,6 +146,11 @@ h2 {
 	-webkit-filter: grayscale(0%);
 	-moz-filter: grayscale(0%);
 	-ms-filter: grayscale(0%);
+}
+
+/* grayscale filter for ie10 >.< */
+svg {
+    background:url(http://4.bp.blogspot.com/-IzPWLqY4gJ0/T01CPzNb1KI/AAAAAAAACgA/_8uyj68QhFE/s400/a2cf7051-5952-4b39-aca3-4481976cb242.jpg);
 }
 
 #gallery p {

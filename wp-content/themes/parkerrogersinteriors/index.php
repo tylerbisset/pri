@@ -8,5 +8,4 @@ $siteController = new SiteController();
 //call the showHome function
 $siteController->showHome();
 
-
 ?>
