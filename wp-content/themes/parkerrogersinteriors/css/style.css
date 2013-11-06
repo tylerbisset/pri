@@ -61,10 +61,12 @@ body {
 	background-repeat: none;
 	margin: 0 auto;
 }
+
 .homebutton {
 	float: left;
 	padding: 10px;
 }
+
 .menu ul, .menu li{
 	display: inline;
 }
@@ -131,7 +133,7 @@ h2 {
 	/* Fallback for web browsers that don't support RGBa */
     background: rgb(0, 0, 0);
     /* RGBa with 0.6 opacity */
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 #gallery img {
@@ -222,11 +224,6 @@ svg {
 }
 
 /* Contact Page CSS */
-#contact {
-	width: 170px;
-	margin: 20px auto;
-}
-
 #contactbox{
 	width: 640px;
     height: 640px;
@@ -284,9 +281,8 @@ form textarea {
 	border: none;
 	border: 1px solid #666;
 	padding: 3px;
-	width: 610px;
 	margin-bottom: 20px;
-	min-width: 300px;	
+	width: 100%;	
 	height: 100px;
 	resize: none;
 	margin-top: 5px;
@@ -306,4 +302,94 @@ form input[type=submit]{
 footer {
 	text-align: center;
 	padding: 20px 0;
+}
+
+/* Media Queries
+=====================================================*/
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 960px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	#gallery {
+		width: 430px;
+		height: 100%;
+	}
+	
+	#foursquare {
+		width: 430px;
+		min-height: 100%;
+		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: hidden;		
+	}
+	
+	#foursquare img {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#topright {
+		height: 100%;
+		width: 100%;
+	}
+	
+	#topleft {
+		height: 100%;
+		width: 100%;
+	}
+	
+	#bottomright {
+		height: 100%;
+		width: 100%;
+	}
+	
+	#bottomleft {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+	#gallery {
+		width: 100%;
+		height: 100%;
+	}
+	
+	#foursquare {
+		width: 430px;
+		min-height: 100%;
+		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: hidden;		
+	}
+	
+	#foursquare img {
+		display: block;
+		margin: 0 auto;
+	}
+	
+	#topright {
+		height: 100%;
+		width: 100%;
+	}
+	
+	#topleft {
+		height: 100%;
+		width: 100%;
+	}
+	
+	#bottomright {
+		height: 100%;
+		width: 100%;
+	}
+	
+	#bottomleft {
+		height: 100%;
+		width: 100%;
+	}
 }
