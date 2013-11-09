@@ -119,7 +119,7 @@ h2 {
 /* Home Page CSS */
 #homebox {
 	width: 480px;
-	margin: 340px auto;
+	margin: 20% auto;
 }
 
 /* Projects/Press Page CSS */
@@ -169,8 +169,8 @@ svg {
 	width: 144px;
 	margin: 20px auto;
 }
- /*for about and contact pages */
-#foursquare {
+
+#aboutbox {
     width: 640px;
     min-height: 640px;
     margin: 0 auto;
@@ -182,71 +182,35 @@ svg {
     background: rgba(0, 0, 0, 0.6);
 }
 
-#foursquare p {
+#aboutbox p {
 	line-height: 24px;
-}
-
-#topleft {
 	width: 300px;
 	height: 300px;
-    margin: 10px;
-    display: block;
-    float: left;
-}
-
-#topright {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    display: block;
-    float: left;
-	overflow: auto;
-	overflow-x: hidden;
-}
-
-#bottomleft {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    display: block;
-    float: left;
-    clear: left;
-	overflow: auto;
-	overflow-x: hidden;
-}
-
-#bottomright {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    display: block;
-    float: left;   
+	display: inline-block;
+	margin: 10px;
+	float: left;
 }
 
 /* Contact Page CSS */
 #contactbox{
-	width: 640px;
-    height: 640px;
+	width: 620px;
+    min-height: 620px;
     margin: 0 auto;
-    padding: 10px;
     display: block;
-	overflow: scroll;
-	overflow-x: hidden;
+	padding: 20px;
+	/* Fallback for web browsers that don't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
 }
 
-
-#contactleft {
-    margin: 10px;
-    display: block;
-	
-}
-
-#contactright {
-    margin: 10px;
-    display: block;
-	line-height: 20px;
+#contactbox p {
+	height: 120px;
+	width: 150px;
+	float: right;
 	text-align: right;
-	float:right;
+	line-height: 20px;
+
 }
 
 h3 {
@@ -282,7 +246,7 @@ form textarea {
 	border: 1px solid #666;
 	padding: 3px;
 	margin-bottom: 20px;
-	width: 100%;	
+	width: 98%;	
 	height: 100px;
 	resize: none;
 	margin-top: 5px;
@@ -291,11 +255,12 @@ form textarea {
 form input[type=submit]{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	font-size: 1em;
+	font-size: 1em;	
 	color: #fff;
 	background: #4CBB17;
 	border: none;
 	padding: 5px 10px;
+	margin: 0;
 }
 
 /* Footer */
@@ -325,7 +290,7 @@ footer {
 		margin: 0 auto;
 	}
 	
-	#foursquare {
+	#aboutbox {
 		width: 430px;
 		min-height: 100%;
 		overflow: scroll;
@@ -333,39 +298,36 @@ footer {
 		overflow-y: hidden;		
 	}
 	
-	#foursquare img {
+	#aboutbox img {
 		display: block;
 		margin: 0 auto;
 	}
 	
-	#topright {
+	#aboutbox p {
 		height: 100%;
-		width: 100%;
+		width: 95%;
+		margin: 10px;
 	}
 	
-	#topleft {
-		height: 100%;
-		width: 100%;
-	}
-	
-	#bottomright {
-		height: 100%;
-		width: 100%;
-	}
-	
-	#bottomleft {
-		height: 100%;
-		width: 100%;
+	/* contact page */
+	#contactbox {
+		width: 430px;
+		min-height: 100%;
+		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: hidden;		
 	}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-	
+	/* home page */
 	#homebox {
 		width: 100%;
 		margin: 80% auto;
 	}
+	
+	/* projects and press */
 	#gallery {
 		width: 100%;
 		height: 100%;
@@ -376,7 +338,8 @@ footer {
 		margin: 0 auto;
 	}
 	
-	#foursquare {
+	/* about page */
+	#aboutbox {
 		width: 100%;
 		min-height: 100%;
 		overflow: scroll;
@@ -384,28 +347,33 @@ footer {
 		overflow-y: hidden;		
 	}
 	
-	#foursquare img {
+	#aboutbox img {
 		display: block;
 		margin: 0 auto;
+		height:200px;
+		width: 200px;
 	}
 	
-	#topright {
+	#aboutbox p {
 		height: 100%;
-		width: 100%;
+		width: 95%;
+		margin: 10px;
 	}
 	
-	#topleft {
-		height: 100%;
-		width: 100%;
+	/* contact page */
+	#contactbox {
+		width:100%;
+		min-height: 100%;
+		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: hidden;		
 	}
 	
-	#bottomright {
-		height: 100%;
-		width: 100%;
+	#contactbox p{
+		float: none;
+		text-align: left;
+		margin-bottom: 20px;
 	}
 	
-	#bottomleft {
-		height: 100%;
-		width: 100%;
-	}
+	
 }
