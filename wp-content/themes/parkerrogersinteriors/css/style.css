@@ -117,13 +117,10 @@ h2 {
 }
 
 /* Home Page CSS */
-
-
-#homebox {
-	top: 45%;	
+#homebox {		
 	width: 50%;	
 	text-align: center;
-	margin: 200px auto;
+	margin: 340px auto;
 }
 
 /* Projects/Press Page CSS */
@@ -265,6 +262,12 @@ form input[type=submit]{
 	border: none;
 	padding: 5px 10px;
 	margin: 0;
+	cursor: pointer;
+}
+
+form input[type=submit]:active {
+	color: #000;
+	background: #fff;
 }
 
 /* Footer */
@@ -286,9 +289,11 @@ footer {
 	#homebox {
 		width: 320px;
 	}
+	
 	#gallery {
-		width: 430px;
+		width: 410px;
 		height: 100%;
+		overflow: visible;
 	}
 	
 	#gallery img {
@@ -334,8 +339,9 @@ footer {
 	
 	/* projects and press */
 	#gallery {
-		width: 100%;
+		width: 90%;
 		height: 100%;
+		overflow: visible;
 	}
 	
 	#gallery img {
@@ -345,7 +351,7 @@ footer {
 	
 	/* about page */
 	#aboutbox {
-		width: 100%;
+		width: 90%;
 		min-height: 100%;
 		overflow: scroll;
 		overflow-x: hidden;
@@ -367,7 +373,7 @@ footer {
 	
 	/* contact page */
 	#contactbox {
-		width:100%;
+		width:90%;
 		min-height: 100%;
 		overflow: scroll;
 		overflow-x: hidden;
