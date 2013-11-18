@@ -44,6 +44,11 @@ class SiteController extends ChesterBaseController {
 		));
 	}
 	
+	//renders 404.mustache
+	public function show404(){		
+		echo $this->renderPage('404');
+	}
+	
 } //SiteController
 
 ?>
